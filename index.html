@@ -10,12 +10,18 @@
 <p id="demo"></p>
 
 <script>
+
 async function loadJSON() {
   const response = await fetch("customer.json");
-  const customer = await response.json();
-  myDisplayer(customer.name);
-  myDisplayer(customer.city);
+  const customers = await response.json();
+
+  customers.forEach(customer => {
+    myDisplayer(customer.name);
+    myDisplayer(customer.city);
+    myDisplayer(customer.job);
+  });
 }
+
 
 loadJSON();
 
