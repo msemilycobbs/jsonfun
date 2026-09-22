@@ -18,7 +18,8 @@ async function loadCustomers() {
   let output = "";
 
   customers.forEach(customer => {
-    output += `${customer.name} - ${customer.city} - ${customer.job}<br>`;
+    output += `<a href="google.com"><b>${customer.name}<b></a>`;
+    
   });
 
   document.getElementById("customers").innerHTML = output;
