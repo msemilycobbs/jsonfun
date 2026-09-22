@@ -8,24 +8,24 @@
    <body>
   <h1>test</h1>
 
-<div id="customers"></div>
+<div id="sites"></div>
 
 <script>
-async function loadCustomers() {
-  const response = await fetch("customer.json");
-  const customers = await response.json();
+async function loadJSON() {
+  const response = await fetch("sites.json");
+  const sites = await response.json();
 
   let output = "";
 
-  customers.forEach(customer => {
-    output += `<a href="google.com"><b>${customer.name}<b></a>`;
+  sites.forEach(site => {
+    output += `<a href="${site.url}"><b>${site.name}<b></a><br>`;
     
   });
 
-  document.getElementById("customers").innerHTML = output;
+  document.getElementById("sites").innerHTML = output;
 }
 
-loadCustomers();
+loadJSON();
 </script>
   </body>
 </html>
