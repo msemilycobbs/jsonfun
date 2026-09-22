@@ -11,17 +11,20 @@
 <div id="customers"></div>
 
 <script>
-fetch("customer.json")
-  .then(response => response.json())
-  .then(customers => {
-    let output = "";
+async function loadCustomers() {
+  const response = await fetch("customer.json");
+  const customers = await response.json();
 
-    customers.forEach(customer => {
-      output += `${customer.name} | ${customer.city} | ${customer.job}<br>`;
-    });
+  let output = "";
 
-    document.getElementById("customers").innerHTML = output;
+  customers.forEach(customer => {
+    output += `${customer.name} - ${customer.city} - ${customer.job}<br>`;
   });
+
+  document.getElementById("customers").innerHTML = output;
+}
+
+loadCustomers();
 </script>
   </body>
 </html>
