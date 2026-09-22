@@ -1,0 +1,86 @@
+[
+{
+  "name": "KPedia - kiddlepedea",
+  "url": "https://kids.kiddle.co/",
+  "DSM": "030",
+  "info": "encyclopedia"
+}
+
+{
+  "name": "BBC Bitesize",
+  "url": "https://www.bbc.co.uk/bitesize",
+  "DSM": "000",
+  "info": "general educational resource"
+}
+
+{
+  "name": "Wikihow",
+  "url": "https://www.wikihow.com/Main-Page",
+  "DSM": "000",
+  "info": "how to guides"
+}
+
+{
+  "name": "Visual Dictionary Online",
+  "url": "https://www.visualdictionaryonline.com/index.php",
+  "DSM": "030",
+  "info": "labeled diagrams"
+}
+
+
+{
+  "name": "Kids Discover Online",
+  "url": "https://online.kidsdiscover.com/?show=login",
+  "DSM": "000",
+  "info": "science and history"
+}
+
+{
+  "name": "The Kid Should See This",
+  "url": "https://thekidshouldseethis.com/",
+  "DSM": "000",
+  "info": "educational videos"
+}
+
+{
+  "name": "Lessons Worth Sharing | TED-Ed",
+  "url": "https://ed.ted.com/lessons?sort=featured-position&student_level%5B%5D=1",
+  "DSM": "000",
+  "info": ""
+}
+
+{
+  "name": "Who Smarted",
+  "url": "https://whosmarted.com/all-episodes/",
+  "DSM": "000",
+  "info": "educational podcast"
+}
+
+{
+  "name": "But Why: A Podcast for Curious Kids : NPR",
+  "url": "https://www.npr.org/podcasts/474377890/but-why-a-podcast-for-curious-kids",
+  "DSM": "000",
+  "info": "questions and answers podcast"
+}
+
+{
+  "name": "KS2 Computing - BBC Bitesize",
+  "url": "https://www.bbc.co.uk/bitesize/subjects/zvnrq6f",
+  "DSM": "005",
+  "info": ""
+}
+
+{
+  "name": "Code.org YouTube channel",
+  "url": "https://www.youtube.com/channel/UCJyEBMU1xVP2be1-AoGS1BA",
+  "DSM": "005",
+  "info": ""
+}
+
+{
+  "name": "Python lessons for kids",
+  "url": "https://kidspython.com/#/",
+  "DSM": "005",
+  "info": ""
+}
+]
