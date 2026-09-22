@@ -7,28 +7,21 @@
   </head>
    <body>
   <h1>test</h1>
-     <div id="customers"></div>
+
+<div id="customers"></div>
 
 <script>
+fetch("customer.json")
+  .then(response => response.json())
+  .then(customers => {
+    let output = "";
 
-async function loadJSON() {
-  const response = await fetch("customer.json");
-  const customers = await response.json();
+    customers.forEach(customer => {
+      output += `${customer.name} | ${customer.city} | ${customer.job}<br>`;
+    });
 
-  customers.forEach(customer => {
-    myDisplayer(customer.name);
-    myDisplayer(customer.city);
-    myDisplayer(customer.job);
+    document.getElementById("customers").innerHTML = output;
   });
-}
-
-
-loadJSON();
-
-// Function to display any text
-function myDisplayer(text) {
-  document.getElementById("demo").innerHTML += text ;
-}
 </script>
   </body>
 </html>
